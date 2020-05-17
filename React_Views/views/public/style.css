@@ -1,0 +1,24 @@
+#main{
+        padding-right: 0px;
+        padding-left: 0px;
+}
+.input-field{
+    margin-left: 15px;
+}
+#frm1{
+margin-left: initial;
+}
+
+#head1{
+    margin-left: 235px;
+}
+.input-container{
+    margin-left: 235px;
+    margin-top: 10px;
+    display: flex;
+}
+.input-field{
+    margin-left: 2px;
+    display: flex;
+    flex-direction: row;
+}
