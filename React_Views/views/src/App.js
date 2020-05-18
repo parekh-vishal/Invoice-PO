@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import User from '../../views/src/components/userReg'
+import {Router, Route} from 'react-router';
 function App() {
-  return (
+  return (    
     <div className="App">
-      <User/>  
+      <User/>
     </div>
   );
 }

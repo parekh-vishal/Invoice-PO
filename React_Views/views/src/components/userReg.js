@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-router';
 export class userReg extends Component {
       constructor(props) {
           super(props)
@@ -69,6 +69,7 @@ export class userReg extends Component {
                     </ul>
                     <ul className="nav navbar-nav navbar-right">
                         <li><a href="#"><span className="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
                 </div>
             </nav>
@@ -77,32 +78,32 @@ export class userReg extends Component {
                     <h1 id="head1">
                         User Registration Form
                     </h1>
-                    <div className="input-container">
-                        <label htmlFor="firstName"> First Name : </label>
+                    <div className="input-container" id="inc1">
+                        <label htmlFor="firstName"> First Name  </label>
                         <input className="input-field" id="in1" type="text" placeholder=" Enter First Name" name="firstName" value={this.state.firstName}
                         onChange = {this.handleFname}/>
                     </div>
                     <div className="input-container">
-                        <label htmlFor="lastName"> Last Name : </label>
+                        <label htmlFor="lastName"> Last Name  </label>
                         <input className="input-field" id="in2" type="text" placeholder="Last Name" name="lastName" value={this.state.lastName}
                         onChange = {this.handleLname} />
                     </div>
                     <div className="input-container">
-                        <label htmlFor="email"> E-Mail : </label>
+                        <label htmlFor="email"> E-Mail  </label>
                         <input className="input-field" id="in3" type="text" placeholder="E-mail" name="email" value={this.state.email}
                         onChange = {this.handleEmail} />
                     </div>
                     <div className="input-container">
-                        <label htmlFor="password"> Password : </label>
+                        <label htmlFor="password"> Password  </label>
                         <input className="input-field" id="in4" type="password" placeholder="Password" name="password" value={this.state.password} 
                         onChange = {this.handlePassword}/>
                     </div>
                     <div className="input-container">
-                        <label htmlFor="organization"> Organization : </label>
+                        <label htmlFor="organization"> Organization  </label>
                         <input className="input-field" id="in5" type="text" placeholder="Organization" name="organization" value={this.state.organization} 
                         onChange = {this.handleOrg}/> 
                     </div> 
-                    <button>SignUp</button>
+                    <button className="btn">SignUp</button>
                 </form>
             </div>
             </div>

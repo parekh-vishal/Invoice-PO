@@ -8,17 +8,65 @@
 #frm1{
 margin-left: initial;
 }
-
 #head1{
-    margin-left: 235px;
+    margin-left: 50%;
+    color: #0063B2FF;
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: #5d8ba0;
+    font-weight: 600
 }
 .input-container{
-    margin-left: 235px;
+    margin-left: 50%;
     margin-top: 10px;
-    display: flex;
 }
 .input-field{
     margin-left: 2px;
-    display: flex;
-    flex-direction: row;
+    width: 250px;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  input[type=password] {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+input::placeholder{
+    text-align: center;
+    font-weight: 50;
+}
+
+.btn{
+    margin-left: 60%;
+    margin-top: 20px;
+    size: initial;
+    width: 15%;
+    opacity: 50%;
+    font-weight: 700;
+}
+.btn:hover{
+    opacity: 200%;
+}
+#inc1{
+    margin-top: 20px;
+}
+#in1{
+    margin-left: 34px;
+}
+
+#in2{
+    margin-left: 37px;
+}
+
+#in3{
+    margin-left: 69px;
+}
+#in4{
+    margin-left: 46px;
+}
+#in5{
+    margin-left: 20px;
 }
