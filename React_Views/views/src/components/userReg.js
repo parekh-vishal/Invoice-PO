@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router';
+import Nav from "../components/navBar"
 export class userReg extends Component {
       constructor(props) {
           super(props)
@@ -58,26 +58,12 @@ export class userReg extends Component {
     render() {
         return (
             <div className="container-fluid" id='main'>
-            <nav className="navbar navbar-default">
-                <div className="container-fluid">
-                    <div className="navbar-header">
-                        <a className="navbar-brand" href="#">Invoice And P.O System</a>
-                    </div>
-                    <ul className="nav navbar-nav">
-                        <li><a href="#">Page 1</a></li>
-                        <li><a href="#">Page 2</a></li>
-                    </ul>
-                    <ul className="nav navbar-nav navbar-right">
-                        <li><a href="#"><span className="glyphicon glyphicon-user"></span>Sign Up</a></li>
-                        <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <Nav/>
             <div className="container-fluid">
+            <p id="head1">
+                        User Registration
+                    </p>
                 <form className="container" id = "frm1" action={this.props.action} method={this.props.method} onSubmit={this.handleSubmit}>
-                    <h1 id="head1">
-                        User Registration Form
-                    </h1>
                     <div className="input-container" id="inc1">
                         <label htmlFor="firstName"> First Name  </label>
                         <input className="input-field" id="in1" type="text" placeholder=" Enter First Name" name="firstName" value={this.state.firstName}
