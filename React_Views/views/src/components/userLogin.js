@@ -47,7 +47,7 @@ export class userLogin extends Component {
                 <form className="container" id = "frm1" action={this.props.action} method={this.props.method} onSubmit={this.handleSubmit}>
                 <div className="input-container" id="inc1">
                         <label htmlFor="email"> E-mail Address or User Name  </label>
-                        <input className="input-field" id="in1" type="text" placeholder=" Enter E-mail Address" name="email" value={this.state.email}
+                        <input className="input-field" id="in6" type="text" placeholder=" Enter E-mail Address" name="email" value={this.state.email}
                         onChange = {this.handleEmail}/>
                     </div>
                     <div className="input-container">
@@ -63,7 +63,7 @@ export class userLogin extends Component {
     }
 };
 userLogin.defaultProps = {
-    action: 'http://localhost:3001/app-admin/signup',
+    action: 'http://localhost:3001/app-admin/login',
     method: 'post'
 };
 export default userLogin
