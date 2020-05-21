@@ -8,11 +8,23 @@
 #frm1{
 margin-left: 540px;
 border : 1px solid black;
-width: 500px;
+width: 485px;
+box-shadow: 5px 5px 5px;
 }
+#frm2{
+    margin-left: 230px;
+    width: 500px;
+    }
 #head1{
     margin-top: 40px;
     margin-left: 43%;
+    font-size: 36px;
+    color: #0063B2FF;
+    font-weight: 200;
+}
+#head2{
+    margin-top: 35px;
+    margin-left: 15%;
     font-size: 36px;
     color: #0063B2FF;
     font-weight: 200;
@@ -50,7 +62,6 @@ input::placeholder{
     margin-bottom: 25px;
     size: initial;
     width: 80%;
-    opacity: 80%;
     font-weight: 800;
 }
 .btn:hover{
@@ -78,4 +89,18 @@ input::placeholder{
 }
 #in6{
     margin-left: 120px;
+}
+.lastComp{
+    margin-left: 120px;
+    font-size: 16px;
+}
+.lastlink{
+    margin-left: 145px;
+    font-size: 16px;
+}
+#ino1{
+    margin-top: 5px;
+    margin-left: 35px;
+    display: flex;   
+    font-size: 16px;
 }

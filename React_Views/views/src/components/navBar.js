@@ -11,7 +11,7 @@ export class navBar extends Component {
                     </div>
                     <ul className="nav navbar-nav" style={{marginTop:"10px"}}>
                     </ul>
-                    <ul className="nav navbar-nav navbar-right" style={{marginTop:"10px"}}>
+                    <ul className="nav navbar-nav navbar-right" style={{marginTop:"12px", fontSize:"16px "}}>
                         <li><Link to="/userReg"><span className="glyphicon glyphicon-user"></span>Sign Up</Link></li>
                         <li><Link to="/userLogin"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
                     </ul>

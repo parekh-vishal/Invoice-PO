@@ -41,7 +41,7 @@ export class userLogin extends Component {
             <div className="container-fluid" id="main">
                 <Nav/>
             <div className="container-fluid">
-                <p id="head1">
+                <p id="head1" style={{marginLeft:"48%"}}>
                     Sign In
                 </p>
                 <form className="container" id = "frm1" action={this.props.action} method={this.props.method} onSubmit={this.handleSubmit}>

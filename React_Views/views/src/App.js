@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.css';
-import User from '../../views/src/components/userReg';
-//import {Router, Route} from 'react-router';
 import { BrowserRouter  as Router } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
-//import { createBrowserHistory } from 'history'
+import User from '../../views/src/components/userReg';
+import Home from './components/HomePage';
 import UsrLgn from './components/userLogin';
+import OrgReg from './components/orgReg'
 function App() {
   return (    
     <div className="App">
       <Router>
-        <Route path={"/userReg"} component={User}/>
-        <Route path={"/userLogin"} component={UsrLgn}/>
+        <Route path={"/"} exact component={Home}/>
+        <Route path={"/userReg"} exact strict component={User}/>
+        <Route path={"/userLogin"} exact strict component={UsrLgn}/>
+        <Route path={"/orgReg"} exact strict component={OrgReg}/>
       </Router>
     </div>
   );

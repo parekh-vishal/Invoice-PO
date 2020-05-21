@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Nav from "../components/navBar"
+import { Link } from 'react-router-dom'
 export class userReg extends Component {
       constructor(props) {
           super(props)
@@ -90,6 +91,10 @@ export class userReg extends Component {
                         onChange = {this.handleOrg}/> 
                     </div> 
                     <button className="btn">SignUp</button>
+                    <div style={{marginBottom : "25px"}}>
+                    <p className="lastComp">Do your Organization Registered?</p>
+                    <Link className="lastlink" to="/orgReg">Organization Registration</Link>
+                    </div>
                 </form>
             </div>
             </div>
