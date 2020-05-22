@@ -17,7 +17,7 @@ box-shadow: 5px 5px 5px;
     }
 #head1{
     margin-top: 40px;
-    margin-left: 43%;
+    margin-left: 42.65%;
     font-size: 36px;
     color: #0063B2FF;
     font-weight: 200;
@@ -55,7 +55,12 @@ input::placeholder{
     text-align: center;
     font-weight: 50;
 }
-
+.required::after{
+    content:"*";
+    margin-left: 2px;
+    color: red;
+    display: inline;
+  }
 .btn{
     margin-left: 35px;
     margin-top: 25px;

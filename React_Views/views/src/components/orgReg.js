@@ -121,33 +121,33 @@ export class OrgReg extends Component{
                     <p id="head2">Organization Registration</p>
                     <form id="frm2" className="container" action={this.props.action} method={this.props.method} onSubmit={this.handleSubmit}> 
                     <div className="input-container" >
-                        <label htmlFor="oegName">Organization Name</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter Organization Name" name="orgName" value={this.state.orgName}
+                        <label htmlFor="oegName" className="required">Organization Name</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter Organization Name" name="orgName" value={this.state.orgName}
                         onChange = {this.handleOname}/>
                     </div>
                     <div className="input-container" >
                         <label htmlFor="ceoName">CEO Name</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter CEO Name" name="ceoName" value={this.state.ceoName}
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter CEO Name" name="ceoName" value={this.state.ceoName}
                         onChange = {this.handleCname}/>
                     </div>
                     <div className="input-container" >
-                        <label htmlFor="orgPan">PAN Number</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter Organization's PAN Number" name="orgPAN" value={this.state.orgPAN}
+                        <label htmlFor="orgPan" className="required">PAN Number</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter Organization's PAN Number" name="orgPAN" value={this.state.orgPAN}
                         onChange = {this.handleOrgPan}/>
                     </div>
                     <div className="input-container" >
-                        <label htmlFor="orgGST">GST Number</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter Organization's GST Number" name="orgGST" value={this.state.orgGST}
+                        <label htmlFor="orgGST" className="required">GST Number</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter Organization's GST Number" name="orgGST" value={this.state.orgGST}
                         onChange = {this.handleOrgGST}/>
                     </div>
                     <div className="input-container" >
-                        <label htmlFor="orgTIN">TIN Number</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter Organization's TIN Number" name="orgTIN" value={this.state.orgTIN}
+                        <label htmlFor="orgTIN" className="required">TIN Number</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter Organization's TIN Number" name="orgTIN" value={this.state.orgTIN}
                         onChange = {this.handleOrgTIN}/>
                     </div>
                     <div className="input-container" >
-                        <label htmlFor="s_tax">Service Tax Number</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter Oranization's Service Tax Number" name="service_tax_no" value={this.state.service_tax_no}
+                        <label htmlFor="s_tax" className="required">Service Tax Number</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter Oranization's Service Tax Number" name="service_tax_no" value={this.state.service_tax_no}
                         onChange = {this.handleStax}/>
                     </div>
                     <div className="input-container" >
@@ -161,8 +161,8 @@ export class OrgReg extends Component{
                         onChange = {this.handleFromRegd}/>
                     </div>
                     <div className="input-container" >
-                        <label htmlFor="orgAdd1">Address Line 1</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter Address Line 1" name="orgAddr1" value={this.state.orgAddr1}
+                        <label htmlFor="orgAdd1" className="required">Address Line 1</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter Address Line 1" name="orgAddr1" value={this.state.orgAddr1}
                         onChange = {this.handleOrgAdd1}/>
                     </div>
                     <div className="input-container" >
@@ -170,24 +170,24 @@ export class OrgReg extends Component{
                         <input className="input-field" id="ino1" type="text" placeholder="Enter Address Line 2" name="orgAddr2" value={this.state.orgAddr2}
                         onChange = {this.handleOrgAdd2}/>
                     </div>
-                    <div className="input-container" >
-                        <label htmlFor="orgCity">City</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter City Name " name="orgCity" value={this.state.orgCity}
+                    <div className="input-container">
+                        <label htmlFor="orgCity" className="required">City</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter City Name " name="orgCity" value={this.state.orgCity}
                         onChange = {this.handleOrgCity}/>
                     </div>
-                    <div className="input-container" >
-                        <label htmlFor="orgDistrict">District</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter District" name="orgDistrict" value={this.state.orgDistrict}
+                    <div className="input-container"  >
+                        <label htmlFor="orgDistrict" className="required">District</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter District" name="orgDistrict" value={this.state.orgDistrict}
                         onChange = {this.handleOrgDis}/>
                     </div>
                     <div className="input-container" >
-                        <label htmlFor="orgState">State</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter State" name="orgState" value={this.state.orgState}
+                        <label htmlFor="orgState" className="required">State</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter State" name="orgState" value={this.state.orgState}
                         onChange = {this.handleOrgState}/>
                     </div>
                     <div className="input-container" >
-                        <label htmlFor="orgCountry">Country</label>
-                        <input className="input-field" id="ino1" type="text" placeholder="Enter Country" name="orgCountry" value={this.state.orgCountry}
+                        <label htmlFor="orgCountry" className="required">Country</label>
+                        <input className="input-field" id="ino1" type="text" required placeholder="Enter Country" name="orgCountry" value={this.state.orgCountry}
                         onChange = {this.handleOrgCountry}/>
                     </div>
                     <div className="input-container" >
@@ -196,6 +196,7 @@ export class OrgReg extends Component{
                         onChange = {this.handleStatus}/>
                     </div>
                     <button className="btn" style={{width:"60%"}}>Register</button>
+                    <p style={{marginLeft:"35px", fontSize:"16px"}}> <span style={{color:"red",marginRight:"2px"}}>*</span>Required field</p>
                     </form>                  
                 </div>
             </div>

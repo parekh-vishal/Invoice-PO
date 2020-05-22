@@ -66,8 +66,8 @@ export class userReg extends Component {
                     </p>
                 <form className="container" id = "frm1" action={this.props.action} method={this.props.method} onSubmit={this.handleSubmit}>
                     <div className="input-container" id="inc1">
-                        <label htmlFor="firstName"> First Name  </label>
-                        <input className="input-field" id="in1" type="text" placeholder=" Enter First Name" name="firstName" value={this.state.firstName}
+                        <label htmlFor="firstName" className="required"> First Name  </label>
+                        <input className="input-field" id="in1" type="text" required placeholder=" Enter First Name" name="firstName" value={this.state.firstName}
                         onChange = {this.handleFname}/>
                     </div>
                     <div className="input-container">
@@ -76,23 +76,25 @@ export class userReg extends Component {
                         onChange = {this.handleLname} />
                     </div>
                     <div className="input-container">
-                        <label htmlFor="email"> E-Mail  </label>
-                        <input className="input-field" id="in3" type="text" placeholder="E-mail" name="email" value={this.state.email}
+                        <label htmlFor="email" className="required"> E-Mail  </label>
+                        <input className="input-field" id="in3" type="text" required placeholder="E-mail" name="email" value={this.state.email}
                         onChange = {this.handleEmail} />
                     </div>
                     <div className="input-container">
-                        <label htmlFor="password"> Password  </label>
-                        <input className="input-field" id="in4" type="password" placeholder="Password" name="password" value={this.state.password} 
+                        <label htmlFor="password" className="required"> Password  </label>
+                        <input className="input-field" id="in4" type="password" required placeholder="Password" name="password" value={this.state.password} 
                         onChange = {this.handlePassword}/>
                     </div>
                     <div className="input-container">
-                        <label htmlFor="organization"> Organization  </label>
-                        <input className="input-field" id="in5" type="text" placeholder="Organization" name="organization" value={this.state.organization} 
+                        <label htmlFor="organization" className="required"> Organization  </label>
+                        <input className="input-field" id="in5" type="text" required placeholder="Organization" name="organization" value={this.state.organization} 
                         onChange = {this.handleOrg}/> 
                     </div> 
                     <button className="btn">SignUp</button>
                     <div style={{marginBottom : "25px"}}>
+                    <p style={{marginLeft:"175px", fontSize:"16px"}}> <span style={{color:"red",marginRight:"2px"}}>*</span>Required field</p>
                     <p className="lastComp">Do your Organization Registered?</p>
+                    <p style={{marginLeft:"126px", fontSize:"16px"}}>First Register Your Organization</p>
                     <Link className="lastlink" to="/orgReg">Organization Registration</Link>
                     </div>
                 </form>
