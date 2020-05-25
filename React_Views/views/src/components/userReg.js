@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 export class userReg extends Component {
       constructor(props) {
           super(props)
-      
           this.state = {
                firstName : '',
                lastName : '',
