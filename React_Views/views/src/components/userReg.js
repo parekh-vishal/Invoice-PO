@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import Nav from "../components/navBar"
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import Nav from "../components/navBar";
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 export class userReg extends Component {
       constructor(props) {
           super(props)
@@ -37,22 +38,28 @@ export class userReg extends Component {
               organization : event.target.value
           })
       }
-      handleSubmit = (event)=>{
+       handleSubmit = async (event)=>{
         let frm = document.getElementById('frm1')
         let frmData = new FormData(frm);
         var object = {};
         frmData.forEach((value, key) => {object[key] = value});
         var json = JSON.stringify(object);
         this.setState({xvalue: json});
-        console.log('jsn',json)
-        alert(`${json}`)
-        fetch(this.props.formAction, {
+        console.log('jsn',json);
+        /*fetch(this.props.formAction, {
             headers : {
                 'Accept' : 'application/json',
                 'Content-Type' : 'application/json'
             },
             body : json
-          });
+          });*/
+          await axios.post('http://localhost:3001/app-admin/signup',json)
+          .then(response =>{
+              console.log("response",response);
+          })
+          .catch(error =>{
+              console.log(error);
+          })
       }
       
     render() {

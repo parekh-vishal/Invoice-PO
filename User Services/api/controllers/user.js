@@ -12,7 +12,7 @@ exports.addUser = (req, res, next) => {
         else{
             bcrypt.hash(req.body.password,10,(err,hash)=>{
                 if(err){
-                    return res.status.status(500).json({
+                    return res.status(500).json({
                         error : err
                     });
                 }
@@ -44,9 +44,7 @@ exports.addUser = (req, res, next) => {
                             subscriptionId : '1'
                         });
                         user.save().then(result => {
-                            res.status(201).json({
-                                message: 'User Added'
-                            });
+                            res.redirect('http://localhost:3000/userLogin');
                             console.log('res',result);
                         })
                             .catch(err =>{ 
