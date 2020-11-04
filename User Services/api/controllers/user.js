@@ -68,7 +68,7 @@ exports.addUser = (req, res, next) => {
 //This function retrieve all user
 exports.userData = (req,res,next)=>{
     console.log("in");
-    User.find().select('-password').exec().
+    User.find().select('-password',).exec().
     then(result =>{
         res.status(201).json(result);
     }).

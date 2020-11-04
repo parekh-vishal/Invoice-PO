@@ -8,6 +8,7 @@ mongoose.connect('mongodb://localhost:27017/POIDB',{
     useNewUrlParser: true, useUnifiedTopology: true
 });
 var db = mongoose.connection;
+console.log(process.env.JWT_KEY);
 db.on("error", console.error.bind(console, "connection error"));
 db.once("open", function(callback) {
      console.log("Connection succeeded.");
